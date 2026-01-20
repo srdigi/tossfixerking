@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toss Fixer King 👑 | Cricket Updates</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.9)),
+    url('https://images.unsplash.com/photo-1509021436665-8f07dbf5bf1d');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#fff;
+}
+
+.wrapper{
+    width:100%;
+    max-width:420px;
+    padding:22px;
+    text-align:center;
+}
+
+.logo-box{
+    width:90px;
+    height:90px;
+    margin:0 auto 10px;
+    border-radius:50%;
+    background:#111;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:28px;
+    font-weight:800;
+    color:#ffd700;
+    border:2px solid #ffd700;
+}
+
+.brand{
+    font-size:32px;
+    font-weight:800;
+    color:#ffd700;
+}
+
+.subtext{
+    font-size:14px;
+    color:#ddd;
+    margin-bottom:10px;
+}
+
+.subscribers{
+    font-size:16px;
+    color:#00ff99;
+    font-weight:700;
+    margin-bottom:18px;
+}
+
+.card{
+    background:rgba(0,0,0,0.65);
+    border-radius:18px;
+    padding:24px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.7);
+}
+
+.card h2{
+    font-size:22px;
+    color:#ffcc00;
+    margin-bottom:15px;
+}
+
+.features{
+    text-align:left;
+    font-size:14px;
+    line-height:1.8;
+    margin-bottom:20px;
+}
+
+.join-btn{
+    display:block;
+    width:100%;
+    padding:15px;
+    font-size:18px;
+    font-weight:700;
+    color:#fff;
+    background:linear-gradient(45deg,#ff0000,#ff6600);
+    border-radius:50px;
+    text-decoration:none;
+    animation:pulse 1.4s infinite;
+}
+
+@keyframes pulse{
+    0%{box-shadow:0 0 0 0 rgba(255,80,0,0.7);}
+    70%{box-shadow:0 0 0 14px rgba(255,80,0,0);}
+    100%{box-shadow:0 0 0 0 rgba(255,80,0,0);}
+}
+
+.note{
+    margin-top:14px;
+    font-size:12px;
+    color:#ccc;
+}
+
+.footer{
+    margin-top:18px;
+    font-size:11px;
+    color:#aaa;
+}
+
+/* MOBILE OPTIMIZATION */
+@media(max-width:480px){
+    .brand{font-size:28px;}
+}
+</style>
+</head>
+
+<body>
+<div class="wrapper">
+
+    <!-- LOGO -->
+    <div class="logo-box">TK</div>
+
+    <div class="brand">TOSS FIXER KING 👑</div>
+    <div class="subtext">Cricket Analysis • Match Updates</div>
+
+    <!-- SUBSCRIBER COUNT -->
+    <div class="subscribers">
+        🔥 <span id="count">0</span>+ Members Joined
+    </div>
+
+    <div class="card">
+        <h2>Join Free Channel</h2>
+
+        <div class="features">
+            ✔ Match Updates & Analysis<br>
+            ✔ Pre-Match Insights<br>
+            ✔ Live Match Discussion<br>
+            ✔ Trusted Cricket Community
+        </div>
+
+        <!-- LINK BAAD ME YAHAN PASTE KARE -->
+        <a href="YOUR_LINK_HERE" class="join-btn">
+            JOIN NOW 🚀
+        </a>
+
+        <div class="note">
+            For cricket discussion & analysis only
+        </div>
+    </div>
+
+    <div class="footer">
+        © 2026 Toss Fixer King | All Rights Reserved
+    </div>
+</div>
+
+<script>
+/* SUBSCRIBER COUNT ANIMATION */
+let target = 28750;   // yahan number change kar sakte ho
+let count = 0;
+let speed = 40;
+
+let counter = setInterval(()=>{
+    count += 137;
+    if(count >= target){
+        count = target;
+        clearInterval(counter);
+    }
+    document.getElementById("count").innerText = count;
+}, speed);
+</script>
+
+</body>
+</html>
